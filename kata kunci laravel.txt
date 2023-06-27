@@ -1,0 +1,26 @@
+kata kunci dalam Laravel
+
+make Factory seeder migration pake perinta pada terminal dengan kata (php artisan make:model (nama Model) -mfs
+contoh php artisan make:model Sayur --mfs
+jadi perintah diatas akan membuat model sekaligus migrasi factory dan seeder
+
+ctr p untuk mencari work side
+
+membangkitkan angka random pada laravel dengan perintah 
+ mt_random
+jika ingin membngkitkan bilngan random gunakan
+ sentence(mt_Random)
+
+
+ halamn terpanggil bila memenuhi
+ - route
+ -controller
+ -view
+ -seeder
+ -model
+
+ setiap rubah di route harus panggil php artisan route:cache
+  lalu php artisan route:list untuk chek datanya sudah masuk atau belum
+ 
+  
+

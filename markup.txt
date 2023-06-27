@@ -1,0 +1,11 @@
+@foreach ($stunting as $p)
+    var marker{{ $p->id_stunting }} = L.marker([{{ $p->longitude }}, {{ $p->latitude }}]).addTo(map);
+    var markerPopupContent =
+    "Nama Desa: <b>{{ $p->lokasi_desa }}</b><br>" +
+    "Kecamatan: <b>{{ $p->nama_kecamatan }}</b><br>";
+    @if ($p->jumlah_stunting)
+        markerPopupContent += "Total stunting: <b>{{ $p->jumlah_stunting }} orang</b>";
+    @endif
+    marker{{ $p->id_stunting }}.bindPopup(markerPopupContent);
+@endforeach ;
+</script
